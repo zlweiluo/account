@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>账户  查询</title>
+<link rel="stylesheet" href="js/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen"/>
+
+<style>
+.bs-docs-home
+{ 
+background-color:#9F88FF; 
+background-image: url(line.png); 
+} 
+</style>
+</head>
+
+<body class="bs-docs-home">
+
+       <div class="layout_top_header">
+	<div style="float:left">
+	   <span style="font-size:16px;line-height:45px;
+	        padding-left:20px;color:#fff">
+	       账户管理</h1> 	
+	        </span>
+	</div>
+	
+	<div id="ad_setting" class="ad_setting">
+                <a class="ad_setting_a" href="javascript:; "onclick="window.open('index.html')">
+                    <i class="icon-user glyph-icon" style="font-size: 20px"></i>
+                    <span>管理员</span>
+                    <i class="icon-chevron-down glyph-icon"></i>
+                </a>
+                <ul class="dropdown-menu-uu" style="display: none" id="ad_setting_ul">
+                    <li class="ad_setting_ul_li"> <a href="index.html"><i class="icon-user glyph-icon"></i> 个人中心 </a> </li>
+                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-cog glyph-icon"></i> 设置 </a> </li>
+                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-signout glyph-icon"></i> <span class="font-bold">退出</span> </a> </li>
+                </ul>
+               </div>
+	</div>
+
+<div class="container theme-showcase">
+<h1 style=" line-height:2em;"> </h1><br />
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+<div class="panel panel-primary">
+<div class="panel-heading">
+<h3 class="panel-title"><strong>账户查询</strong></h3>
+</div>
+<div class="panel-body">
+<div class="alert alert-danger alert-dismissable">
+
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+
+<form role="form" name="form1">
+<div class="form-group">
+<label for="IDCard">请输入编码</label>
+<div class="input-group">
+<input type="text" class="form-control" id="IDCard" name="IDCard" placeholder="账户编码" >
+<span class="input-group-btn">
+<button class="btn btn-default" type="button" onclick="return click_a('wp_wuover')"> 查询</button>
+
+<script>
+function click_a(divDisplay)
+{ if(document.getElementById(divDisplay).style.display != "block"){document.getElementById(divDisplay).style.display = "block";} else{document.getElementById(divDisplay).style.display = "none";} }
+</script>
+</span>
+</div>
+</div>
+<div class="form-group">
+<label for="Subject">请输入账户类型</label>
+<div class="input-group">
+<input type="text" class="form-control" id="Subject" name="Subject" placeholder="空白名称意味着查询所有的类型" >
+<div class="input-group-btn">
+<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">类型 <span class="caret"></span></button>
+<ul class="dropdown-menu pull-right">
+<li><a href="#" onClick="$('#Subject').val('管理员');">管理员</a></li>
+<li><a href="#" onClick="$('#Subject').val('主管');">主管</a></li>
+<li><a href="#" onClick="$('#Subject').val('财务');">财务</a></li>
+</ul>
+</div>
+</div>
+</div>
+</form>
+<div class="alert alert-danger alert-dismissable">
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+<strong>注意!</strong> 没有查到此账户，请检查编码后，再次查询 
+</div> 
+<div id="wp_wuover" style="margin:0 20px 20px; display: none;color:red;">
+
+<div class="table-responsive" >
+<table border="0" cellspacing="0" cellpadding="0" class="table">
+<tr class=" label-primary" id="table-responsive">
+<th scope="col" width="50%" ><span style="color:white">类型</span></th>
+<th scope="col"><span style="color:white"></span>注册时段</th>
+</tr>
+<tr class="active">
+<td width="50%">管理员</td>
+<td>2012-06-01</td>
+</tr>
+<tr class="success">
+<td>主管</td>
+<td>2013-05-09</td>
+</tr>
+<tr class="active">
+<td>财务</td>
+<td>2013-11-04</td>
+</tr>
+<tr class="success">
+<td>设计师</td>
+<td>2014-08-02</td>
+</tr> 
+</table>
+</div> 
+</div>
+</div>
+</div>
+<div class="col-sm-3"></div>
+</div>
+</div> 
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

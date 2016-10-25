@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/add.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/index.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="utilLib/bootstrap.min.css" type="text/css" media="screen" />
+
+</head>
+<body>
+
+
+<div class="layout_top_header">
+	<div style="float:left">
+	   <span style="font-size:16px;line-height:45px;
+	        padding-left:20px;color:#8d8d8d">
+	       账户管理</h1> 	
+	        </span>
+	</div>
+	<div id="ad_setting" class="ad_setting">
+                <a class="ad_setting_a" href="javascript:; "onclick="window.open('index.html')">
+                    <i class="icon-user glyph-icon" style="font-size: 20px"></i>
+                    <span>管理员</span>
+                    <i class="icon-chevron-down glyph-icon"></i>
+                </a>
+                <ul class="dropdown-menu-uu" style="display: none" id="ad_setting_ul">
+                    <li class="ad_setting_ul_li"> <a href="index.html"><i class="icon-user glyph-icon"></i> 个人中心 </a> </li>
+                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-cog glyph-icon"></i> 设置 </a> </li>
+                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-signout glyph-icon"></i> <span class="font-bold">退出</span> </a> </li>
+                </ul>
+               </div>
+	</div>
+
+<div class="div_from_aoto" style="width: 500px;">
+    <FORM>
+        <DIV class="control-group">
+            <label class="laber_from">编码</label>
+            <DIV  class="controls" ><INPUT class="input_from" type=text placeholder=" 请输入编码"><P class=help-block></P></DIV>
+        </DIV>
+        <DIV class="control-group">
+            <LABEL class="laber_from">名称</LABEL>
+            <DIV  class="controls" ><INPUT class="input_from" type=text placeholder=" 请输入名称"><P class=help-block></P></DIV>
+        </DIV>
+            <DIV class="control-group">
+            <LABEL class="laber_from" >状态</LABEL>
+            <DIV  class="controls" ><INPUT class="input_from" type=text placeholder=" 请输入确认状态"><P class=help-block></P></DIV>
+      
+          <DIV class="control-group">
+            <LABEL class="laber_from" >创建时间</LABEL>
+            <DIV  class="controls" ><INPUT class="input_from" type=text placeholder=" 输入时间，格式yyyy-xx-xx"><P class=help-block></P></DIV>
+           <DIV class="control-group">
+            <LABEL class="laber_from" >最后登录时间</LABEL>
+            <DIV  class="controls" ><INPUT class="input_from" type=text placeholder=" 输入时间，格式yyyy-xx-xx"><P class=help-block></P></DIV>     
+        <DIV class="control-group">
+            <LABEL class="laber_from">账户类型</LABEL>
+            <DIV  class="controls" >
+                <SELECT class="input_select">
+                    <OPTION selected>123</OPTION>
+                    <OPTION>456</OPTION>
+                    <OPTION>007</OPTION>
+                    <OPTION>008</OPTION>
+                </SELECT>
+            </DIV>
+        </DIV>
+        <DIV class="control-group">
+            <LABEL class="laber_from" ></LABEL>
+            <DIV class="controls" ><button class="btn btn-success" style="width:120px;" onclick="window.open('role.html')">确认</button></DIV>
+        </DIV>
+    </FORM>
+</div>
+</body>
+</html>

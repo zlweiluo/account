@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>账户管理系统</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css" media="screen"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tendina.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+
+</head>
+<body>
+
+<div class="layout_top_header" >
+	<div style="float:left">
+	   <span style="font-size:16px;line-height:45px;
+	        padding-left:20px;color:#8d8d8d">
+	       账户管理</h1> 	
+	        </span>
+	</div>
+	<div id="ad_setting" class="ad_setting">
+                <a class="ad_setting_a" href="javascript:; ">
+                    <i class="icon-user glyph-icon" style="font-size: 20px"></i>
+                    <span>管理员</span>
+                    <i class="icon-chevron-down glyph-icon"></i>
+                </a>
+                <ul class="dropdown-menu-uu" style="display: none" id="ad_setting_ul">
+                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-user glyph-icon"></i> 个人中心 </a> </li>
+                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-cog glyph-icon"></i> 设置 </a> </li>
+                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-signout glyph-icon"></i> <span class="font-bold">退出</span> </a> </li>
+                </ul>
+               </div>
+	</div>
+
+
+ <div class="layout_left_menu">
+        <ul id="menu">
+            <li class="childUlLi">
+               <a href="main.html"  target="menuFrame"><i class="glyph-icon icon-home"></i>首页</a>
+                <ul>
+                    <li><a href="user_add.html" target="menuFrame"> <i class="glyph-icon icon-chevron-right"></i>账户基本属性</a></li>
+                </ul>
+            </li>
+            <li class="childUlLi">
+                <a href="role.html"  target="menuFrame" target="iframe "> <i class="glyph-icon icon-reorder"></i>账户基本操作</a>
+               
+            </li>
+            <li class="childUlLi">
+                <a href="user.html" target="menuFrame"> <i class="glyph-icon icon-reorder"></i>账户查询</a>
+             
+            </li>
+            
+
+
+            <li class="childUlLi">
+            <a href="#"> <i class="glyph-icon  icon-location-arrow"></i>帮助</a>
+                <ul>
+                    <li><a href="main.html" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>联系开发者</a></li>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+  <div id="layout_right_content" class="layout_right_content">
+
+        <div class="route_bg">
+            <a href="#">主页</a><i class="glyph-icon icon-chevron-right"></i>
+            <a href="#">菜单管理</a>
+        </div>
+        <div class="mian_content">
+            <div id="page_content">
+                <iframe id="menuFrame" name="menuFrame" src="role.html" style="overflow:visible;"
+                        scrolling="yes" frameborder="no" width="90%" height="100%"></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
